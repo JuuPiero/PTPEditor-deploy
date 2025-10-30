@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Tunnel Puzzle - Editor</title>
+    <title>Bố Thành vĩ đại</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
@@ -47,6 +47,46 @@
   <script type="module" crossorigin src="assets/index-RZURhEee.js"></script>
 </head>
   <body class="bg-gray-900 text-gray-100 antialiased">
+    <style>
+    .title-glow {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 35px;
+      margin: 10px;
+      color: #ffb347;
+      text-shadow: 0 0 5px #ffb347, 0 0 10px #ffb347, 0 0 20px #ff9a00;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #ffb347, 0 0 10px #ffb347, 0 0 20px #ff9a00; }
+      to { text-shadow: 0 0 20px #ffd700, 0 0 30px #ffb347, 0 0 40px #ff8c00; }
+    }
+
+    .title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 25px;
+      margin: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+  /* border-right: 3px solid orange; */
+  width: 0;
+  animation: typing 3s steps(20) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; } /* chỉnh cho vừa dòng chữ */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+    </style>
+    <h1 class="title title-glow ">Bố Thành vĩ đại</h1>
     <div id="root"></div>
 
 </body>
